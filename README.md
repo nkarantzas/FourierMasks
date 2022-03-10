@@ -4,9 +4,9 @@ the characterization of their computations and the origin of key properties such
 generalization and robustness remain open questions. Recent literature suggests that 
 robust networks with good generalization properties tend to be biased towards processing 
 low frequencies in images. To explore the frequency bias hypothesis further, we develop 
-an algorithm that allows us to learn \emph{modulatory masks} highlighting the 
-\emph{essential input frequencies} needed for preserving a trained network's performance. 
-We achieve this by imposing \emph{invariance} in the loss with respect to such modulations 
+an algorithm that allows us to learn modulatory masks highlighting the essential input 
+frequencies needed for preserving a trained network's performance. 
+We achieve this by imposing invariance in the loss with respect to such modulations 
 in the input frequencies. We first use our method to test the low-frequency preference 
 hypothesis of adversarially trained or data-augmented networks. Our results suggest that 
 adversarially robust networks indeed exhibit a low-frequency bias but we find this bias is 
