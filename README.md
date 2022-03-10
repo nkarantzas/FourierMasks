@@ -43,7 +43,7 @@ python3 train_models.py --architecture='vgg --model_save_folder='trained_models'
 
 2. Once the models are trained, we train the masks for each model by running (in the same fashion)
 
-python3 train_masks.py --architecture='vgg --pretrained_model_folder='trained_models' --mask_save_folder='trained_masks'
+python3 train_masks.py --architecture='vgg --model_save_folder='trained_models' --mask_save_folder='trained_masks'
 
 3. We can also train single img masks for images in our validation set by running
 
