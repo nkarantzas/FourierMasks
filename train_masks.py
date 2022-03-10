@@ -124,7 +124,7 @@ def train_mask(
         shuffle_test=True,
         num_workers=3,
         transform='n',
-        pretrained=pretrained_model,
+        pretrained_model=pretrained_model,
         architecture=architecture
     )
     loader = loaders.testloader()
@@ -191,7 +191,7 @@ def main(
     
     if not os.path.exists(mask_save_folder):
         os.makedirs(mask_save_folder)
-    model_paths = glob(pretrained_model_folder + '/*.pt')
+    model_paths = glob(pretrained_model_folder + f'/{architecture}*.pt')
     if len(model_paths)==0:
         print('base models have not been trained yet')
     else:    
