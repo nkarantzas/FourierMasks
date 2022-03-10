@@ -9,7 +9,7 @@ from loaddata import Loaders
 from networks import MaskCore
 from easydict import EasyDict
 from attacks import PGD
-from nnfunctions import fix_seeds
+from train_models import fix_seeds
 from flags import args
 
 def model_predictions(
@@ -276,6 +276,7 @@ def main(
     num_images=None
 ):
     
+    print(mask_save_folder)
     if not os.path.exists(mask_save_folder):
         os.makedirs(mask_save_folder)
     
@@ -370,6 +371,7 @@ def main(
 if __name__ == "__main__":
     main(
         architecture=args.architecture, 
+        pretrained_model_folder=args.model_save_folder,
         mask_save_folder=args.single_img_mask_save_folder, 
         num_images=args.num_images
     )
