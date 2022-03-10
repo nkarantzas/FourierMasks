@@ -7,7 +7,7 @@ import torch.backends.cudnn as cudnn
 from loaddata import Loaders
 from networks import MaskCore
 from easydict import EasyDict
-from nnfunctions import fix_seeds
+from train_models import fix_seeds
 from flags import args
 
 def epoch_mask_train(
