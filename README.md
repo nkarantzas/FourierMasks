@@ -47,7 +47,7 @@ python3 train_masks.py --architecture='vgg --model_save_folder='trained_models' 
 
 3. We can also train single img masks for images in our validation set by running
 
-python3 train_single_img_masks.py --architecture='vgg' --mask_save_folder='trained_single_img_masks'
+python3 train_single_img_masks.py --architecture='vgg' --model_save_folder='trained_models' --single_img_mask_save_folder='trained_single_img_masks'
 
 ---
 # Generating Figs
