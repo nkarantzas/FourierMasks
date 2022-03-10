@@ -1,9 +1,12 @@
+---
 # FourierMasks 
 ---
 
-Code is an implementation of the paper titled "Understanding robustness and generalization 
+This code is an implementation of the paper titled "Understanding robustness and generalization 
 of artificial neural networks through Fourier masks" (Under review).
 
+---
+# Description
 ---
 
 This is an algorithm that allows us to learn modulatory masks highlighting the essential 
@@ -23,8 +26,6 @@ Our results also indicate that the essential frequencies in question are effecti
 used to achieve generalization in the first place. Images seen through these modulatory masks 
 are not recognizable and resemble texture-like patterns.
 
----
-
 1. We train a neural net (VGG11 or ResNet18) on 5 classes of ImageNet (https://www.image-net.org/)
 considering various kinds of data augmentation.
 
@@ -32,8 +33,8 @@ considering various kinds of data augmentation.
 properties of the pretrained neural net.
 
 ---
-
-Replicating the results found in Notebooks 1-3:
+# Replicating the results found in Notebooks 1-3:
+---
 
 1. choose architecture = 'vgg' or 'resnet' and a folder where the trained models will be saved, 
 e.g., model_save_folder = 'trained_models'. Then run
@@ -47,3 +48,9 @@ python3 train_masks.py --architecture='vgg --pretrained_model_folder='trained_mo
 3. We can also train single img masks for images in our validation set by running
 
 python3 train_single_img_masks.py --architecture='vgg' --mask_save_folder='trained_single_img_masks'
+
+---
+# Generating Figs
+---
+
+Once all 3 are finished you can obtain the final result Figs by running Notebooks 1-3
