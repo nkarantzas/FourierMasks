@@ -53,4 +53,4 @@ python3 train_single_img_masks.py --architecture='vgg' --model_save_folder='trai
 # Generating Figs
 ---
 
-Once all 3 are finished you can obtain the final result Figs by running Notebooks 1-3
+Once all 3 training runs are finished you can obtain the final result Figs by running Notebooks 1-3
