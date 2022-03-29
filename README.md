@@ -39,11 +39,11 @@ properties of the pretrained neural net.
 1. choose architecture = 'vgg' or 'resnet' and a folder where the trained models will be saved, 
 e.g., model_save_folder = 'trained_models'. Then run
 
-python3 train_models.py --architecture='vgg --model_save_folder='trained_models'
+python3 train_models.py --architecture='vgg' --model_save_folder='trained_models'
 
 2. Once the models are trained, we train the masks for each model by running (in the same fashion)
 
-python3 train_masks.py --architecture='vgg --model_save_folder='trained_models' --mask_save_folder='trained_masks'
+python3 train_masks.py --architecture='vgg' --model_save_folder='trained_models' --mask_save_folder='trained_masks'
 
 3. We can also train single img masks for images in our validation set by running
 
