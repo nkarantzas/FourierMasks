@@ -3,7 +3,7 @@
 ---
 
 This code is an implementation of the paper titled "Understanding robustness and generalization 
-of artificial neural networks through Fourier masks" (Under review).
+of artificial neural networks through Fourier masks".
 
 ---
 # Description
